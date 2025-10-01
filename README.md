@@ -51,13 +51,27 @@ Azure Migrate & Site Recovery
 Linux/Windows CLI (rsync, PowerShell)
 
 CloudWatch & Azure Monitor (Monitoring)
-
 ``
 ## 📌 How to Use
-Clone the repo:
+- Clone the repo:
 git clone https://github.com/your-username/server-migration-project.git
 
-Navigate to Phase 1:
+- Navigate to Phase 1:
 cd phase1-onprem-to-aws/terraform
 terraform init
 terraform apply
+
+- Follow the migration playbook and validation checklist.
+- Repeat for Phase 2 under phase2-aws-to-azure.
+``
+## 🧯 Rollback Strategy
+In case of migration failure, refer to rollback-strategy.md for recovery procedures and DNS reversion steps.
+``
+## 👤 Author
+Obioma  
+Location: Lagos, Nigeria
+Project Lead & Cloud Migration Architect
+
+``
+## 📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
