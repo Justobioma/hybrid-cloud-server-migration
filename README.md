@@ -54,8 +54,9 @@ CloudWatch & Azure Monitor (Monitoring)
 ``
 ## 📌 How to Use
 - Clone the repo:
+``` bash 
 git clone https://github.com/your-username/server-migration-project.git
-
+```
 - Navigate to Phase 1:
 cd phase1-onprem-to-aws/terraform
 terraform init
@@ -66,6 +67,37 @@ terraform apply
 ``
 ## 🧯 Rollback Strategy
 In case of migration failure, refer to rollback-strategy.md for recovery procedures and DNS reversion steps.
+
+---
+
+## 🌐 Phase 2: AWS to Azure Migration
+
+This phase simulates the migration of workloads from AWS EC2 to Azure Virtual Machines using Azure-native tools and Bicep for infrastructure provisioning.
+
+### 🔧 Tools Used
+- Azure Migrate (agent-based)
+- Azure Site Recovery
+- SCP/rsync for manual transfers
+- Bicep for IaC
+- Azure Monitor & Defender
+
+### 📁 Folder Structure
+
+```plaintext
+phase2-aws-to-azure/
+├── bicep/                      # Azure infrastructure setup
+├── migration-playbook.md      # AWS to Azure migration guide
+├── validation-checklist.md    # Azure validation checklist
+├── architecture-diagram.png   # Azure infrastructure diagram
+```
+## 📌 How to Use
+Navigate to Phase 2:
+```bash 
+cd phase2-aws-to-azure/bicep
+az deployment sub create --location eastus --template-file main.bicep
+```
+- Follow the migration playbook and validation checklist.
+- Confirm success and update DNS records.
 ``
 ## 👤 Author
 Obioma  
