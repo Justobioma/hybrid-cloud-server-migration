@@ -33,3 +33,8 @@ This playbook outlines the simulated migration of three legacy servers from an o
 
 ```bash
 rsync -avz /var/www/ ubuntu@<AWS_EC2_IP>:/var/www/
+- Install Apache on EC2
+- Copy config files: /etc/apache2/sites-available/
+- Restart Apache: sudo systemctl restart apache2
+
+
