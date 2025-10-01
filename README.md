@@ -1,4 +1,9 @@
 # 🚀 Hybrid Server Migration Project
+![Terraform](https://img.shields.io/badge/IaC-Terraform-blueviolet)
+![Azure](https://img.shields.io/badge/Cloud-Azure-blue)
+![AWS](https://img.shields.io/badge/Cloud-AWS-orange)
+![Migration](https://img.shields.io/badge/Project-Migration-green)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
 
 This repository simulates a full-scale server migration project involving:
 
